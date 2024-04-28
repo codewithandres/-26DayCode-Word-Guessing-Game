@@ -1,4 +1,4 @@
-let words = [
+export const wordList = [
     {
         word: "javascript",
         hint: "Un lenguaje de programación muy popular en el desarrollo web."
