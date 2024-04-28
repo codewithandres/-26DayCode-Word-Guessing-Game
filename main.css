@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Onest:wght@100..900&display=swap');
+
+:root {
+    --bg-gradient: linear-gradient(hsl(240, 33%, 9%), hwb(240 0% 92%));
+    --br: .5em;
+    --ff-nunio: "Nunito", sans-serif;
+    --ff-weigth-rguluar: 400;
+    --ff-weigth-md: 500;
+    --ff-weigth-bl: 800;
+    --color-txt: hsl(0, 0%, 83%);
+    --bg-container: hsl(254, 64%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-nunio);
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    color: var(--color-txt);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
