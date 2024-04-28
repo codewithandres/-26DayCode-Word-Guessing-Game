@@ -8,7 +8,9 @@
     --ff-weigth-md: 500;
     --ff-weigth-bl: 800;
     --color-txt: hsl(0, 0%, 83%);
-    --bg-container: hsl(254, 64%, 8%);
+    --bg-container: hsl(227, 90%, 4%);
+    --border: 1px solid hsla(0, 0%, 80%, 0.315);
+    --box-shadow: hsla(0, 0%, 0%, 0.05) 0px 6px 24px 0px, hsla(0, 0%, 0%, 0.08) 0px 0px 0px 1px;
 }
 
 * {
@@ -28,4 +30,77 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.wrapper {
+    width: 450px;
+    background-color: var(--bg-container);
+    border-radius: var(--br);
+    box-shadow: var(--box-shadow);
+}
+
+.wrapper h2 {
+    font-size: 2rem;
+    font-weight: var(--ff-weigth-md);
+    padding: 20px 25px;
+    border-bottom: var(--border)
+}
+
+.wrapper .content {
+    margin: 25px 25px 35px;
+}
+
+.content .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.inputs input {
+    width: 57px;
+    height: 56px;
+    margin: 4px;
+    border-radius: var(--br);
+    border: var(--border);
+    color: var(--color-txt);
+    background-color: transparent;
+    font-size: 1.4em;
+    font-weight: var(--ff-weigth-md);
+    text-align: center;
+}
+
+.inputs input:first-child {
+    margin-left: 0;
+}
+
+.inputs input:last-child {
+    margin-right: 0;
+}
+
+.content .details {
+    margin: 20px 0 25px;
+}
+
+.details p {
+    font-size: 1rem;
+    margin-bottom: .7rem;
+    font-weight: var(--ff-weigth-md);
+}
+
+.details p span {
+    font-weight: var(--ff-weigth-rguluar);
+}
+
+.reset-button {
+    cursor: pointer;
+    outline: none;
+    border: var(--border);
+    background-color: transparent;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-txt);
+    padding: 10px 0;
+    background-color: var(--bg-container);
+    border-radius: var(--br);
 }
